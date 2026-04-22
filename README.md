@@ -13,3 +13,7 @@
 > - Kaz Chhan-Kong
 >   - Github: kaazzzz
 >   - Email: <kvchhankong@uncg.edu>
+
+# Dataset
+
+[Fast Food Consumption & Health Impact Dataset](https://www.kaggle.com/datasets/prince7489/fast-food-consumption-and-health-impact-dataset)
