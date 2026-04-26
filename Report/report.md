@@ -34,9 +34,17 @@ The dataset used in the analysis contains 800 participant records across 11 heal
 
 Exploratory data analysis was conducted to understand the distribution and relationship within the data, including descriptive statistics for both numeric and categorical variables, group-by aggregations across gender, age group, and digestive issue status, and a correlation matrix across all numeric features. For hypothesis testing, a Pearson correlation test was used to evaluate the linear relationship between fast foods consumption and overall self reported health scores, and an independent samples t-test was conducted to assess whether fast food consumption differed significantly between paraticipants with and without digestive issues. Finally, two predictive models were built and compared; a Decision Tree Regressor and a Random Forest Regressor both trained to predict overall self reported health score from the remaining features, and evaluated using mean squared error (MSE) and $R^2$ score.
 
+# Statistical Analysis and Hypothesis Testing
+
+## Methods
+
+## Results
+
+## Interpretation
+
 # Data Modeling
 
-#### Methods
+## Methods
 
 To analyze the relationship between the selected features and the target variable (overall health score), two machine learning models were implemented: a Decision Tree Regressor and a Random Forest Regressor. Key features included lifestyle and demographic factors such as fast food consumption frequency, physical activity level, age, and gender. These variables were selected because they are commonly associated with health outcomes and were available in the dataset after cleaning.
 
@@ -51,7 +59,7 @@ Model performance was evaluated using two metrics:
 Mean Squared Error (MSE): Measures the average squared difference between predicted and actual values, the lower the score the better. \
 R² Score: Indicates how well the model explains the variance in the target variable. Closer to 1 is better, negative values indicate poor performance.
 
-#### Results
+## Results
 
 The Decision Tree model produced the following results:
 
@@ -67,7 +75,7 @@ The Random Forest model showed improved performance:
 
 While the random forest reduced the prediction error compared to the decision tree, the R² score is still slightly negative. This indicates that although the ensemble model is more stable and accurate than a single decision tree, it still does not effectively explain the variability in the overall health score.
 
-#### Interpretation
+## Interpretation
 
 Although the Random Forest model improved performance, both models struggled to accurately predict overall health score. This suggests that the selected features such as fast food consumption frequency and physical activity do have some influence, but they are not strong enough on their own to fully explain differences in health outcomes.
 
