@@ -35,12 +35,48 @@ The dataset used in the analysis contains 800 participant records across 11 heal
 Exploratory data analysis was conducted to understand the distribution and relationship within the data, including descriptive statistics for both numeric and categorical variables, group-by aggregations across gender, age group, and digestive issue status, and a correlation matrix across all numeric features. For hypothesis testing, a Pearson correlation test was used to evaluate the linear relationship between fast foods consumption and overall self reported health scores, and an independent samples t-test was conducted to assess whether fast food consumption differed significantly between paraticipants with and without digestive issues. Finally, two predictive models were built and compared; a Decision Tree Regressor and a Random Forest Regressor both trained to predict overall self reported health score from the remaining features, and evaluated using mean squared error (MSE) and $R^2$ score.
 
 # Statistical Analysis and Hypothesis Testing
+Pearson Correlation Test and T test
 
-## Methods
+## Pearson Correlation Test
+A Pearson Correlation test was performed and modeled as a scatter plot to test the question of _Is there a significant linear relationship between fast food consumption and overall health score?_
 
-## Results
+*Null Hypothesis ($H_0$) :* There is NO linear correlation between fast food meals per week and overall health score.
 
-## Interpretation
+The Peason Correlation test was chosen because both variables are numeric and continuous. Pearson Correlation measures the strength and direction of the linear relationship between the specified variables.
+
+
+### Results 
+The results of the Pearson Correlation test came to be a correlation coefficient of 0.0373 and a p-value of 0.2924. 
+
+
+### Analysis
+A correlation coefficient of 0.0373 indicates very little to no correlation due to it being near zero. A p-value of 0.2924 is greater than our significance level 0.05, thus we fail to reject the null hypothesis and can conclude that there is NO linear correlation between fast food meals per week and overall health score.
+
+## Correlation Scatter Plot 
+![Scatter Plot of Fast Food Consumption vs Overall  Health Score](Figures/correlation.png)
+
+
+### Scatter Plot Interpretation
+Based on the scatter plot of Fast Food Consumption vs Overall Health Score, there seems to be no correlation between fast food consumption and overall health score. The scatter plot has no negative or positive direction and the data points are not following a close tight line, indicating of of no correlation between the two variables. The scatter plot shows that for all amounts of fast food eaten, there seeems to be an overall health score across all scores. Based on this scatter plot, it can be stated that fast food consumption has no effect or correlation with overall health score and no linear relationship.
+
+## T test
+Fast Food Consumption vs Digestive Issues were then tested and modeled as a violin plot to test the question of _Do people with digestive issues eat more fast food than those without?_
+
+*Null Hypothesis ($H_0$) :* There is no difference in fast food consumption between individuals with and without digestive issues.
+
+A T test was chosen to see if there is any causation between digestive issues and the amount of fast food meals eaten. 
+
+### Results
+The results of the T test came to be a t statistic of $t = -1.9239$ and a p-value of $p = 0.0547$.
+
+### Analysis 
+A t statistic of -1.9239 indicates that group_yes (those with digestive issues) have slightly lower fast food consumption than group_no. A p-value of 0.0547 is greater than our significance level 0.05, thus we fail to reject the null hypothesis and can conclude that there is no difference in fast food consumption between individuals with and without digestive issues. Although the t statistic indicates there is difference in fast food consumption between those with and without digestive issues, the statistical significance comes from the p-value. 
+
+## Violin Plot 
+![Violin Plot of Fast Food Consumption vs Digestive Issues](Figures/violin.png)
+
+### Violin Plot Interpretation
+Based on the violin plot of Fast Food Consumption and Digestive Issues, it shows that the overall shapes of both distributions are very similar, indicating that the amount of fast food eaten by those with and without digestive issues are not drastically different. The medians seems to be very close which indicates that both groups tend to eat the same amount of fast food meals. Both groups also have a similar range and spread as well and there is no clear shift or differences in the two groups. From this violin plot, there is no strong evidence that people with digestive issues tend to eat more fast food than those who do not have digestive issues.
 
 # Data Modeling
 
