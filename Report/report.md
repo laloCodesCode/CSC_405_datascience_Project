@@ -127,6 +127,6 @@ The dataset includes factors like sleep, energy level, and physical activity, th
 
 This analysis was conducted to determine whether fast food consumption is meaningful predictor of overall health outcomes. Across all three stages of the analysis the findings consistently pointed to the same conclusion which is the consumption of fast food frequently is not a strong predictor of overall health outcomes.
 
-The Pearson Correlation test yielded no statistically significant relationship between the frequency of fast food consumption and overall health score ($r^2 = 0.0373, p = 0.2924.$). The independent t-test similarly found no significant difference in fast food consumption between those with and without digestive issues ($t = -1.9239, p = 0.0547$). Both predictive models produced negative $R^2$ scores, confirming that the available features were not enough to explain variability in overall health outcomes.
+The Pearson Correlation test yielded no statistically significant relationship between the frequency of fast food consumption and overall health score ($r = 0.0373, p = 0.2924.$). The independent t-test similarly found no significant difference in fast food consumption between those with and without digestive issues ($t = -1.9239, p = 0.0547$). Both predictive models produced negative $R^2$ scores, confirming that the available features were not enough to explain variability in overall health outcomes.
 
 These results suggest that health is multifactorial and cannot be adequately captured by fast food consumption and lifestyle variables alone.
