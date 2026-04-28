@@ -34,6 +34,10 @@ The dataset used in the analysis contains 800 participant records across 11 heal
 
 Exploratory data analysis was conducted to understand the distribution and relationship within the data, including descriptive statistics for both numeric and categorical variables, group-by aggregations across gender, age group, and digestive issue status, and a correlation matrix across all numeric features. For hypothesis testing, a Pearson correlation test was used to evaluate the linear relationship between fast foods consumption and overall self reported health scores, and an independent samples t-test was conducted to assess whether fast food consumption differed significantly between paraticipants with and without digestive issues. Finally, two predictive models were built and compared; a Decision Tree Regressor and a Random Forest Regressor both trained to predict overall self reported health score from the remaining features, and evaluated using mean squared error (MSE) and $R^2$ score.
 
+# Limitations
+
+There is a major caveat with the manner of how overall health scores were obtained, this score is self reported by the participants. The data is subject to bias, a participant can overstate their health by under reporting their fast food consumption, level of physical activity, and many of the other variables that factor into overall health. Thus, this data is not representative of a broader population since there is no viable way to verify the accuracy of the data and not taking other socioeconomic factors into account.
+
 # Statistical Analysis and Hypothesis Testing
 
 ## Pearson Correlation Test
