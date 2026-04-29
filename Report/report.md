@@ -9,11 +9,23 @@ date: "April 29, 2026"
 geometry: margin=1in
 papersize: us-letter
 fontsize: 12pt
-page-numbering: "I"
+page-numbering: "1"
 ---
 
 ```{=typst}
 #set par(leading: 0.65em, spacing: 1.2em, first-line-indent: 0em)
+```
+
+```{=typst}
+#pagebreak()
+```
+
+```{=typst}
+#outline(
+  title: "Table of Contents",
+  indent: auto,
+  depth: 2,
+)
 ```
 
 ```{=typst}
@@ -134,3 +146,43 @@ This analysis was conducted to determine whether fast food consumption is meanin
 The Pearson Correlation test yielded no statistically significant relationship between the frequency of fast food consumption and overall health score ($r = 0.0373, p = 0.2924.$). The independent t-test similarly found no significant difference in fast food consumption between those with and without digestive issues ($t = -1.9239, p = 0.0547$). Both predictive models produced negative $R^2$ scores, confirming that the available features were not enough to explain variability in overall health outcomes.
 
 These results suggest that health is multifactorial and cannot be adequately captured by fast food consumption and lifestyle variables alone.
+
+# Project Workflow and Work Division
+
+## Workflow
+
+```{=typst}
+#block(
+  width: 100%,
+  align(center, {
+    let step(t) = box(stroke: 1pt, radius: 4pt, inset: 8pt, t)
+    step[Choose Dataset]
+    h(8pt) + sym.arrow.r + h(8pt)
+    step[Data Cleaning]
+    h(8pt) + sym.arrow.r + h(8pt)
+    step[EDA]
+    h(8pt) + sym.arrow.r + h(8pt)
+    step[Analysis]
+    h(8pt) + sym.arrow.r + h(8pt)
+    step[Data Modeling]
+    h(8pt) + sym.arrow.r + h(8pt)
+    step[Conclusion]
+  })
+)
+```
+
+## Work Division
+
+### Eduardo Herrera-Barraza
+
+- Data cleaning and EDA
+
+### Lily Nguyen
+
+- Statistical Analysis & Hypothesis Testing
+
+### Kaz Chhan-Kong
+
+- Data Modeling
+
+_**As a whole we worked on the report and the presentation slides.**_
